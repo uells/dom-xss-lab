@@ -30,7 +30,29 @@
             </nav>
         </aside>
 
-        <main class="flex-1 mb-24">
+        <main class="flex-1 mb-24 p-6 bg-gradient-to-br from-white/70 via-white/40 to-white/20 backdrop-blur-xl border border-white/80 rounded-2xl shadow-[0_12px_32px_-8px_rgba(0,0,0,0.15)]">
+            <h2 class="text-slate-900 text-xl font-semibold">innerHTML</h2>
+
+            <div class="flex items-center gap-5 mt-3 mb-5">
+                <div>
+                    <div class="text-[10px] uppercase tracking-widest text-slate-400">Источник</div>
+                    <div class="font-mono text-sm text-slate-700">location.search</div>
+                </div>
+                <div class="text-slate-300">→</div>
+                <div>
+                    <div class="text-[10px] uppercase tracking-widest text-slate-400">Приёмник</div>
+                    <div class="font-mono text-sm text-slate-700">element.innerHTML</div>
+                </div>
+            </div>
+
+            <div class="w-fit rounded-xl overflow-hidden shadow-md border border-white/10">
+                <div class="flex items-center gap-1.5 px-3 py-2 bg-[#211d36]">
+                    <span class="w-2.5 h-2.5 rounded-full bg-red-400/80"></span>
+                    <span class="w-2.5 h-2.5 rounded-full bg-yellow-400/80"></span>
+                    <span class="w-2.5 h-2.5 rounded-full bg-green-400/80"></span>
+                </div>
+                <pre class="font-mono text-sm bg-[#1a1728] text-indigo-100 px-4 py-3 overflow-x-auto"><code>element.innerHTML = payload;</code></pre>
+            </div>
         </main>
 
     </div>
