@@ -54,14 +54,32 @@
                 <pre class="font-mono text-sm bg-[#1a1728] text-indigo-100 px-4 py-3 overflow-x-auto"><code>element.innerHTML = payload;</code></pre>
             </div>
 
-            <div class="mt-6">
+            <form method="GET" class="mt-6">
                 <label for="payload" class="block text-[10px] uppercase tracking-widest text-slate-400">Источник</label>
                 <textarea
                     id="payload"
+                    name="q"
                     rows="4"
                     placeholder="<img src=x onerror=alert(document.domain)>"
                     class="w-full max-w-md mt-1 bg-white/80 border border-slate-300 rounded-lg px-3 py-3 font-mono text-sm text-slate-800 resize-none transition-shadow duration-200 focus:outline-none focus:ring-2 focus:ring-slate-400"
                 ></textarea>
+
+                <button
+                    type="submit"
+                    class="block mt-3 px-4 py-2 rounded-lg bg-slate-900 text-white text-sm font-medium hover:bg-slate-800 transition cursor-pointer"
+                >
+                    Отправить
+                </button>
+            </form>
+
+            <div class="mt-6">
+                <label class="block text-[10px] uppercase tracking-widest text-slate-400">Приёмник</label>
+                <div
+                    id="result"
+                    class="w-full max-w-md mt-1 min-h-16 bg-white/50 border border-dashed border-slate-300 rounded-lg px-3 py-3 text-sm text-slate-400"
+                >
+                    Результат появится здесь
+                </div>
             </div>
         </main>
 
